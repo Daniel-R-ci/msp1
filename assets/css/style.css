@@ -13,11 +13,12 @@
 :root {
     --primary-font: "Montserrat", sans-serif;
     --secondary-font: "Fraunces", cursive;
-    --primary-color: #000000; /* Black */
-    --secondary-color: #2b2118ff; /* Bistree */
-    --header-background-color: #6f1a07ff; /* Barn red */
-    --primary-background-color: #a8763eff; /* Copper */
-    --secondary-background-color: #ece4b7ff; /* Vanilla */
+    --primary-color: #000000; /* Black, Primary text color */
+    --secondary-color: #2b2118ff; /* Bistree, Used for headlines */
+    --primary-background-color: #a8763eff; /* Copper, dark background around main content */
+    --secondary-background-color: #ece4b7ff; /* Vanilla, lighter background behind main content */
+    --header-background-color: #6f1a07ff; /* Barn red, color for header */
+
 
 }
 
@@ -37,11 +38,51 @@ h1, h2, h3{
     background-color: var(--secondary-background-color);
 }
 
+.under-header{ /*Used on first object under header to provide menu overlap */
+    padding: 4rem;
+}
+.row
+{
+    margin-top: 1rem;
+    background-color: var(--secondary-background-color);
+    border-radius: 5px;
+}
+
+/* Home page */
+
+.read-more{
+    text-align: end;
+}
+.section-text{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.section-picture{
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
 /* Navbar styles */
 
 #navbar{
     background-color: var(--header-background-color);
 }
 
+/* grid visualisation CSS for testing */
 
+/*.container,
+.row {
+    border: 2px solid black;
+}
+
+.col-12, .col-md-10, .col-md-5, .col-lg-8, .col-lg-4, .col-lg-10, .col-lg-5 {
+    border: 2px solid white;
+    background-color: lightgray;
+}
+*/
 
