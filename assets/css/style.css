@@ -15,7 +15,8 @@
     --secondary-font: "Fraunces", cursive;
     --primary-color: #000000; /* Black */
     --secondary-color: #2b2118ff; /* Bistree */
-    --primary-background-color: #6f1a07ff; /* Barn red */
+    --header-background-color: #6f1a07ff; /* Barn red */
+    --primary-background-color: #a8763eff; /* Copper */
     --secondary-background-color: #ece4b7ff; /* Vanilla */
 
 }
@@ -32,9 +33,14 @@ h1, h2, h3{
     color: var(--secondary-color);
 }
 
-
 .secondary-background{ /* Used to lighten up text and image area */
     background-color: var(--secondary-background-color);
+}
+
+/* Navbar styles */
+
+#navbar{
+    background-color: var(--header-background-color);
 }
 
 
