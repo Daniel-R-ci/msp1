@@ -45,7 +45,7 @@ h1, h2, h3{
 {
     margin-top: 1rem;
     background-color: var(--secondary-background-color);
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 
@@ -53,12 +53,12 @@ h1, h2, h3{
 /* Home page */
 
 /*read more-buttons to replace Bootstraps styling */
-.read-more{
+.btn-read-more{
     border: 1px solid var(--secondary-color);
     
 }
 
-.read-more:hover{
+.btn-read-more:hover{
     background-color: var(--secondary-color);
     color: white;
 }
