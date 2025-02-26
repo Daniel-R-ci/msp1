@@ -49,6 +49,18 @@ h1, h2, h3{
     border-radius: 10px;
 }
 
+/* Override Bootstrap menu defaults for increased contrast */
+.nav-link
+{
+    color: #dddddd;
+}
+
+#navbar .active{
+    color: #ffffff;
+    font-weight:600;
+}
+
+
 
 
 /* Home page */
