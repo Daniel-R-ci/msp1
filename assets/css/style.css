@@ -14,7 +14,7 @@
     --primary-font: "Montserrat", sans-serif;
     --secondary-font: "Fraunces", cursive;
     --primary-color: #000000; /* Black, Primary text color */
-    --secondary-color: #2b2118ff; /* Bistree, Used for headlines */
+    --secondary-color: #2b2118ff; /* Bistree, Used for headlines and buttons*/
     --primary-background-color: #a8763eff; /* Copper, dark background around main content */
     --secondary-background-color: #ece4b7ff; /* Vanilla, lighter background behind main content */
     --header-background-color: #6f1a07ff; /* Barn red, color for header */
@@ -48,11 +48,21 @@ h1, h2, h3{
     border-radius: 5px;
 }
 
+
+
 /* Home page */
 
+/*read more-buttons to replace Bootstraps styling */
 .read-more{
-    text-align: end;
+    border: 1px solid var(--secondary-color);
+    
 }
+
+.read-more:hover{
+    background-color: var(--secondary-color);
+    color: white;
+}
+
 .section-text{
     margin-top: 25px;
     margin-bottom: 25px;
