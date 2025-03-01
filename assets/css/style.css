@@ -40,7 +40,7 @@ h1, h2, h3{
 }
 
 .under-header{ /*Used on first object under header to protect against menu overlap */
-    padding-top: 4rem;
+    padding-top: 4rem;'
 }
 .row
 {
@@ -82,25 +82,29 @@ footer a{
 
 
 
-/* Home page */
+/* Page styling */
 
-/*read more-buttons to replace Bootstraps styling */
-.btn-read-more{
+/* Button styling, to replace Bootstrap styling */
+
+.btn{
     border: 1px solid var(--secondary-color);
     transition: transform 0.5s ease;
     
 }
 
-.btn-read-more:hover{
+.btn:hover{
     background-color: var(--secondary-color);
     color: white;
-    transform: scale(1.25);
+    transform: scale(1.2);
 }
 
+/* Section-text, to be used on columns containing text */
 .section-text{
     margin-top: 25px;
     margin-bottom: 25px;
 }
+
+/* section-picture, to be used on columns containing pictures */
 .section-picture{
     width: 100%;
     margin-top: 25px;
