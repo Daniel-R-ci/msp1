@@ -39,8 +39,10 @@ h1, h2, h3{
     background-color: var(--secondary-background-color);
 }
 
-.under-header{ /*Used on first object under header to protect against menu overlap */
-    padding-top: 4rem;'
+/*Main padding used to protect against menu overlap and distance to footer*/
+main{ 
+    padding-top: 4rem;
+    padding-bottom: 1.5rem;
 }
 .row
 {
@@ -69,7 +71,7 @@ h1, h2, h3{
 
 footer{
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    /*padding-bottom: 1rem; */
     background-color: var(--secondary-color);
     color: var(--secondary-background-color)
 }
