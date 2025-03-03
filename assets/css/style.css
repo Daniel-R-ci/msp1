@@ -71,6 +71,10 @@ main{
     text-decoration-line: underline;
 }
 
+#navbar{
+    background-color: var(--header-background-color);
+}
+
 /* Footer */
 
 footer{
@@ -129,15 +133,19 @@ footer a{
 
 /*Overriding CSS for Accordion styling */
 
+/* Add margin to bottom of accordion, for visual consistency */
 .accordion{
     margin-bottom: 1rem;
 }
+
+/* Override normal h margin */
 .accordion-header
 {
     margin-top: 0;
 }
 
-#accordion-links .row
+
+/* Override normal row properties when used in accordion */.accordion .row
 {
     margin-top: 1rem;
     background-color: white;
@@ -147,9 +155,7 @@ footer a{
 
 /* Navbar styles */
 
-#navbar{
-    background-color: var(--header-background-color);
-}
+
 
 /* grid visualisation CSS for testing */
 
