@@ -1,15 +1,8 @@
 /* Montserrat and Fraunces fonts from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* HEX colors, color palette from coolors.co 
---copper: #a8763eff;
---barn-red: #6f1a07ff;
---vanilla: #ece4b7ff;
---bistre: #2b2118ff;
---pakistan-green: #1c3a13ff;
-/*
 
-/* CSS Variables */
+/* CSS Variables, color palette from coolors.co  */
 :root {
     --primary-font: "Montserrat", sans-serif;
     --secondary-font: "Fraunces", cursive;
@@ -22,11 +15,9 @@
     /* Overriding bootstrap accordion standard color for headings */
     --bs-primary-bg-subtle: #white;
     --bs-primary-text-emphasis: #2b2118ff;
-
-
 }
 
-/* Global styles */
+/* Global styles, applies to all pages */
 body{
     background-color: var(--primary-background-color);
     color: var(--primary-color);
@@ -39,15 +30,20 @@ h1, h2, h3{
     color: var(--secondary-color);
 }
 
-.secondary-background{ /* Used to lighten up text and image area */
+/* Used to lighten up text and image area */
+/* Commented out since it's probably not used at all
+.secondary-background{
     background-color: var(--secondary-background-color);
 }
+    */
 
-/*Main padding used to protect against menu overlap and distance to footer*/
+/* Main padding used to protect against menu overlap and assure distance to footer*/
 main{ 
     padding-top: 4rem;
     padding-bottom: 1.5rem;
 }
+
+/* Styling of Bootstrap rows */
 .row
 {
     margin-top: 1rem;
@@ -62,15 +58,18 @@ main{
     color: #dddddd;
 }
 
+/* Override Bootstrap menu defaults for increased contrast */
 #navbar .active{
     color: #ffffff;
     font-weight:600;
 }
 
+/* Override Bootstrap menu defaults for increased contrast */
 .nav-link:hover{
     text-decoration-line: underline;
 }
 
+/* Set navbar background to same color as header */
 #navbar{
     background-color: var(--header-background-color);
 }
@@ -88,11 +87,6 @@ footer a{
     text-decoration: none;
     color: var(--secondary-background-color);
 }
-
-
-
-
-/* Page styling */
 
 /* Button styling, to replace Bootstrap styling */
 /* Transition idea and code provided by mentor Spencer Barriball */
@@ -126,6 +120,7 @@ footer a{
 
 /* Resources pages */
 
+/* Set link/header in resources page to center, overriden with media query for md-size and above */
 .link-header
 {
     text-align: center;
@@ -133,28 +128,26 @@ footer a{
 
 /*Overriding CSS for Accordion styling */
 
-/* Add margin to bottom of accordion, for visual consistency */
+/* Add margin to bottom of accordion, for distance to footer */
 .accordion{
     margin-bottom: 1rem;
 }
 
-/* Override normal h margin */
+/* Override normal h2 margin to place accordion-items next to each other*/
 .accordion-header
 {
     margin-top: 0;
 }
 
 
-/* Override normal row properties when used in accordion */.accordion .row
+/* Override normal row properties when used in accordion */
+.accordion .row
 {
     margin-top: 1rem;
     background-color: white;
     box-shadow:none;
     border-radius:0%;
 }
-
-/* Navbar styles */
-
 
 
 /* grid visualisation CSS for testing */
@@ -172,10 +165,10 @@ footer a{
 
 /* Media querys */
 
-/*Tablets or larger */
+/*Tablets or larger, equals Bootstrap medium */
 @media (min-width: 768px) {
 
-    /* Adjust link headline to left when in multiple columns */
+    /* Adjust link headline used in accordion to left when used in multiple columns */
     .link-header{
         text-align: left;
     }
