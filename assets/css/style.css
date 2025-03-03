@@ -122,10 +122,23 @@ footer a{
 
 /* Resources pages */
 
+.link-header
+{
+    text-align: center;
+}
+
 /*Overriding CSS for Accordion styling */
 .accordion-header
 {
     margin-top: 0;
+}
+
+#accordion-links .row
+{
+    margin-top: 1rem;
+    background-color: white;
+    box-shadow:none;
+    border-radius:0%;
 }
 
 /* Navbar styles */
@@ -146,4 +159,16 @@ footer a{
     background-color: lightgray;
 }
 */
+
+/* Media querys */
+
+/*Tablets or larger */
+@media (min-width: 768px) {
+
+    /* Adjust link headline to left when in multiple columns */
+    .link-header{
+        text-align: left;
+    }
+    
+}
 
