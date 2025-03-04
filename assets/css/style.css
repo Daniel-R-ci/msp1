@@ -1,8 +1,8 @@
-/* Montserrat and Fraunces fonts from Google Fonts */
+/**** Montserrat and Fraunces fonts from Google Fonts ****/
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-/* CSS Variables, color palette from coolors.co  */
+/**** CSS Variables, color palette from coolors.co  ****/
 :root {
     --primary-font: "Montserrat", sans-serif;
     --secondary-font: "Fraunces", cursive;
@@ -17,7 +17,7 @@
     --bs-primary-text-emphasis: #2b2118ff;
 }
 
-/* Global styles, applies to all pages */
+/*** Global styles, applies to all pages ****/
 body{
     background-color: var(--primary-background-color);
     color: var(--primary-color);
@@ -29,13 +29,6 @@ h1, h2, h3{
     font-family: var(--secondary-font);
     color: var(--secondary-color);
 }
-
-/* Used to lighten up text and image area */
-/* Commented out since it's probably not used at all
-.secondary-background{
-    background-color: var(--secondary-background-color);
-}
-    */
 
 /* Main padding used to protect against menu overlap and assure distance to footer*/
 main{ 
@@ -88,13 +81,12 @@ footer a{
     color: var(--secondary-background-color);
 }
 
-/* Button styling, to replace Bootstrap styling */
+/**** Button styling, to replace Bootstrap styling ****/
 /* Transition idea and code provided by mentor Spencer Barriball */
 
 .btn{
     border: 1px solid var(--secondary-color);
-    transition: transform 0.5s ease;
-    
+    transition: transform 0.5s ease; 
 }
 
 .btn:hover{
@@ -109,14 +101,14 @@ footer a{
     margin-bottom: 25px;
 }
 
-/* section-picture, to be used on columns containing pictures */
+/* section-picture, to be used on img tags in columns */
 .section-picture{
     width: 100%;
     margin-top: 25px;
     margin-bottom: 25px;
 }
 
-/* Resources pages */
+/**** Resources pages ****/
 
 /* Set link/header in resources page to center, overriden with media query for md-size and above */
 .link-header
@@ -124,7 +116,7 @@ footer a{
     text-align: center;
 }
 
-/*Overriding CSS for Accordion styling */
+/**** Overriding CSS for Accordion styling ****/
 
 /* Add margin to bottom of accordion, for distance to footer */
 .accordion{
@@ -137,7 +129,6 @@ footer a{
     margin-top: 0;
 }
 
-
 /* Override normal row properties when used in accordion */
 .accordion .row
 {
@@ -146,20 +137,6 @@ footer a{
     box-shadow:none;
     border-radius:0%;
 }
-
-
-/* grid visualisation CSS for testing */
-
-/*.container,
-.row {
-    border: 2px solid black;
-}
-
-.col-12, .col-md-10, .col-md-5, .col-lg-8, .col-lg-4, .col-lg-10, .col-lg-5 {
-    border: 2px solid white;
-    background-color: lightgray;
-}
-*/
 
 /* Media querys */
 
@@ -172,4 +149,3 @@ footer a{
     }
     
 }
-
