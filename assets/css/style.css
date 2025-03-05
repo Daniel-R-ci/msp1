@@ -122,7 +122,16 @@ footer a{
     margin-top: 10px;
 }
 
-/**** Resources pages ****/
+/**** Modules page ****/
+
+/* Override bootstrap formatting to make sure white text is always visible */
+.carousel-caption
+{
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+/**** Resources pages ***/
 
 /* Set link/header in resources page to center, overriden with media query for md-size and above */
 .link-header
