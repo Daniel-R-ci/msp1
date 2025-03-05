@@ -45,6 +45,13 @@ main{
     border-radius: 10px;
 }
 
+/* Used with nested rows to avoid borders/box shadows */
+.hidden-border
+{
+    box-shadow:none;
+}
+
+
 /* Override Bootstrap menu defaults for increased contrast */
 .nav-link
 {
@@ -95,6 +102,8 @@ footer a{
     transform: scale(1.2);
 }
 
+/**** Section styling, to account for margins and image size ****/
+
 /* Section-text, to be used on columns containing text */
 .section-text{
     margin-top: 20px;
@@ -106,6 +115,11 @@ footer a{
     width: 100%;
     margin-top: 25px;
     margin-bottom: 25px;
+}
+
+/* Smaller margins used in contact form */
+.section-contact{
+    margin-top: 10px;
 }
 
 /**** Resources pages ****/
