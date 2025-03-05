@@ -14,7 +14,7 @@
 
     /* Overriding bootstrap accordion standard color for headings */
     --bs-primary-bg-subtle: #white;
-    --bs-primary-text-emphasis: #2b2118ff;
+    --bs-primary-text-emphasis: #2b2118ff; /* Bistree /*
 }
 
 /*** Global styles, applies to all pages ****/
@@ -86,6 +86,10 @@ footer{
 footer a{
     text-decoration: none;
     color: var(--secondary-background-color);
+}
+
+footer a:hover{
+        color: white;
 }
 
 /**** Button styling, to replace Bootstrap styling ****/
