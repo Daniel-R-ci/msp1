@@ -116,7 +116,7 @@ footer a{
     text-align: center;
 }
 
-/**** Overriding CSS for Accordion styling ****/
+/* Following classes are for overriding CSS for Accordion styling */
 
 /* Add margin to bottom of accordion, for distance to footer */
 .accordion{
@@ -136,6 +136,21 @@ footer a{
     background-color: white;
     box-shadow:none;
     border-radius:0%;
+}
+
+/**** Contact page ****/
+
+/* Increase contrast for visual clarity */
+.about-link{
+    color: darkblue;
+}
+
+.about-link:hover{
+    font-weight: bold;
+}
+
+.about-link:visited{
+    color: darkblue;
 }
 
 /* Media querys */
